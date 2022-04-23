@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="./sy.js" type="module"></script>
+<script type="module">
+    // test case
+    // 3 + 12 * 3 - 6 + (20 / 5)
+    // (1 + 2 - 3 * 4 / 5) + ((3-2) * 12) / 3 - 12
+    import calculator from "./sy.js";
+    const str = '1 + (2 - 3) * (4 / 2 / 10) + (3 * 2 * 4 * (8 - 2 - 4)) / 2 * 3 + 34'
+    console.warn(`需要计算的表达式是：${str}`)
+    console.log(`计算器计算结果：${calculator(str)}`)
+    console.log(`eval 计算结果：${eval(str)}`)
+</script>
+</body>
+</html>
